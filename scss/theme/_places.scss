@@ -1,0 +1,35 @@
+.places{
+        padding: $gap-s 0;
+        @media screen and (min-width: 30em){//**********BREAKPOINT 480PX
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @media screen and (min-width: 48em){//**********BREAKPOINT 768PX
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+    &__figure{
+        text-align: center;
+        &:nth-child(even){
+            margin: $gap-xs 0;  
+            @media screen and (min-width: 30em){//**********BREAKPOINT 480PX
+                margin: 0 0;
+            } 
+        }
+        @media screen and (min-width: 30em){//**********BREAKPOINT 480PX
+            flex-basis: 50%;
+            margin: 0 0;
+        }
+        figcaption{
+            color:$color-light-dark;
+            font-size: $fz-small;
+        }
+        img{
+            border-radius: 50%;
+            width: 40%;
+            border:2px solid $color-primary;
+        }
+    }
+}

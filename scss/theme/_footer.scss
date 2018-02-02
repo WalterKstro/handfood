@@ -1,0 +1,46 @@
+.wrapper-footer{
+    background-color: $color-dark;
+}
+
+.footer{
+    color: $color-light;
+    text-align: center;
+    padding: $gap-xs 0;
+    font-size: $fz-small;
+    @media screen and (min-width: 37.5em){//**********BREAKPOINT 600px
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__copy{
+        margin-bottom: $gap-xs;
+        color: $color-light-dark;
+        @media screen and (min-width: 37.5em){//**********BREAKPOINT 600px
+            margin-bottom: 0;
+        }
+        span{
+            color: $color-primary;
+        }
+    }
+    &__networking{
+        @media screen and (min-width: 37.5em){//**********BREAKPOINT 600px
+            flex-basis: 20%;
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__item{
+
+        display: inline;
+        a{
+            color: $color-light;
+            font-size: 2rem;
+            @media screen and (min-width: 37.5em){//**********BREAKPOINT 600px
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+}

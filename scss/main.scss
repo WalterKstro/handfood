@@ -1,0 +1,38 @@
+// PALETA DE COLORES
+
+$color-primary: hsl(8, 91%, 47%);
+$color-light: hsl(0, 0%, 97%);
+$color-dark:hsl(0, 0%, 15%);
+$color-orange:hsl(48, 95%, 49%);
+$color-light-dark: darken(hsl(0, 0%, 97%), 35%);
+
+
+
+// TAMAÑO DE FUENTES
+$h1: 60px / 16px * 1rem;
+$h2: 40px / 16px * 1rem;
+$h3: 20px / 16px * 1rem;
+
+$fz-default: 16px / 16px * 1rem;
+$fz-small: 12px / 16px * 1rem;
+
+$gap-l: 50px / 16px * 1rem;
+$gap-m: 40px / 16px * 1rem;
+$gap-s: 30px / 16px * 1rem;
+$gap-xs: 20px / 16px * 1rem;
+
+// IMPORTS
+
+@import "base/base";
+@import "layout/layout";
+@import "theme/header";
+@import "module/button";
+@import "state/state";
+@import "theme/find";
+@import "theme/places";
+@import "theme/visited";
+@import "theme/download";
+@import "theme/footer";
+
+
+

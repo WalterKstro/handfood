@@ -1,0 +1,93 @@
+.wrapper-find{
+    background-image: url(../../images/bg-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: $color-dark;
+        position: absolute;
+        opacity: .7;
+        z-index: -1;
+        display: block;
+    }
+}
+.find{
+    @media screen and (min-width: 48em){//***************BREAKPOINT 768PX
+        padding: $gap-m 0;
+    }
+    @media screen and (min-width: 64em){//***************BREAKPOINT 1024PX
+       display: flex;
+       flex-wrap: wrap;
+       align-content: center;
+       justify-content: center;
+       height: 500px;
+       margin-top: 0;
+    }
+    &__title{
+        font-size: $h1;
+        color: $color-light;
+        padding-top: $gap-xs;
+        @media screen and (min-width: 48em){//***************BREAKPOINT 768PX
+            margin-bottom: $gap-s;
+            padding-top: $gap-s;
+        }
+        @media screen and (min-width: 64em){//***************BREAKPOINT 1024PX
+            font-size: $h1;
+            margin-bottom: 0;
+            padding-top: 0;
+        }
+    }
+    &__descriptcion{
+        color: $color-light;
+        margin: $gap-s 0;
+        font-size: $fz-default;
+        span{
+            color: $color-primary;
+        }
+        @media screen and (min-width: 64em){//***************BREAKPOINT 1024PX
+            flex-basis: 60%;
+        }
+    }
+    &__form{
+        padding: 0 $gap-xs;
+        @media screen and (min-width: 48em){//***************BREAKPOINT 1024PX
+           flex-basis: 80%;
+           display: flex;
+           position: relative;
+        }
+        [type=text]{
+            color: $color-dark;
+            display: block;
+            background-color:$color-light;
+            width: 100%;
+            height: 3rem;
+            padding: 0 $gap-m;
+            border-radius: 30px;
+            border: 0;
+            opacity: .7;
+      
+            @media screen and (min-width: 48em){//***************BREAKPOINT 1024PX
+                flex-basis: 100%;
+            }
+        }
+        [type=button]{
+            width: 100%;
+            margin: $gap-xs 0;
+            @media screen and (min-width: 48em){//***************BREAKPOINT 1024PX
+               position: absolute;
+               width: 20%;
+               right: 25px;
+               top: -16px;
+            }
+        }
+    }
+    &__search{
+        font-weight: 400;
+    }
+}
