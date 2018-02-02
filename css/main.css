@@ -363,7 +363,7 @@ img {
         border-radius: 24px; } }
 
 .wrapper-download {
-  background-image: url(../../images/app.jpeg);
+  background-image: url(../images/app.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
